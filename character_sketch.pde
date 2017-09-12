@@ -6,7 +6,6 @@ background(255, 225, 225);
 noStroke();
 rect(200,50,200,100);
 
-
 //eyes
 stroke(225,225,225);
 strokeWeight(5);
