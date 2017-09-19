@@ -106,7 +106,7 @@ void draw(){
    line(275,135,325,135);
      if(mousePressed){
        if(mouseX>x1 && mouseX<x1+w1 && mouseY>y1 && mouseY<y1+h1){
-         fill(255,145,145);
+         fill(random(255),random(255),random(255));
          rect(x1,y1,w1,h1);
          //eyes
          stroke(225,225,225);
