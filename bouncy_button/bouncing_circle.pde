@@ -1,5 +1,5 @@
 //the button plays sound when it clicks but i'm not sure if this works on other computers where the mp3 isn't downloaded ?? 
-//the mp3 is included in the upload tho
+//the mp3 is included in the file upload just in case tho 
 
 import processing.sound.*;
 SoundFile file;
