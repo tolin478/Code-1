@@ -1,5 +1,6 @@
 //i made the button play sound when i click but in retrospect im realizing that won't work on other computers since they don't have the mp3
-//the mp3 is included in the full file just in case tho 
+//so i guess file.play needs to be commented out for this to work on other computers
+//the mp3 is included in the full file just in case tho
 
 import processing.sound.*;
 SoundFile file;
@@ -56,7 +57,7 @@ void mousePressed(){
  if(clickable==true){
   if(mouseX>rectX && mouseX<rectX+rectW && mouseY>rectY && mouseY<rectY+rectH){
     clicked=true;
-    file.play();
+    //file.play();
   }
  }
 }
