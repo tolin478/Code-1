@@ -1,4 +1,4 @@
-//i made the button play sound when i click but i'm not sure if this works on other computers where the mp3 isn't downloaded ?? 
+//i made the button play sound when i click but in retrospect im realizing that won't work on other computers since they don't have the mp3
 //the mp3 is included in the full file just in case tho 
 
 import processing.sound.*;
