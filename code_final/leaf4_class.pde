@@ -1,0 +1,49 @@
+class Leaf4 {
+  float leafWidth = 100;
+  
+  float yPos = 0;
+  float penX, penY, anchorX, anchorY;
+
+  float swingAmount = radians(10);
+  float angle = radians(90);
+  
+  float easing = 0.05;
+
+  Leaf4() {
+    anchorX = random(50,550);
+    anchorY = -75;
+  }
+  
+  void display() {
+    
+    float currentAngle = angle + cos(frameCount * .045) * swingAmount;
+    penX = cos(currentAngle)*yPos + anchorX;
+    penY = sin(currentAngle)*yPos + anchorY;
+    
+    yPos += 1.75;
+  
+    pushMatrix();
+    
+    translate(penX,penY);
+    rotate( cos(frameCount * .03) * .15 );
+    image(img2,0,0,leafWidth, leafWidth);
+      
+    popMatrix();
+    
+    if(yPos>650){
+      yPos = -50;
+      anchorX = random(50,550);
+ 
+   }
+   
+   if(mousePressed){
+     if(mouseX<penX){
+        anchorX += 50 * easing;
+        
+     }else if(mouseX>penX){
+        anchorX -= 50 * easing;
+    
+     }
+   }
+  }
+}
